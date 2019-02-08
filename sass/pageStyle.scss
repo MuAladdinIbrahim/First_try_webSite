@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw; 
+    font-style: italic;
+} 
+
+.header{
+    background: $deepPink;
+    width: 100%;
+    tr{
+      width: 100%;
+    }
+    th{
+      float: left;
+      width: (100% / 6);
+    }
+    
+    a{
+      color: $offWhite;
+      text-decoration: none;
+      padding: 16px;
+      display: block;
+      text-align: center;
+      font-size: 2vw;
+      font-family: 'Courier New', Courier, monospace;
+      &:hover{
+        background: lighten($deepPink, 6);
+      }
+    }  
+}
+
+.container {
+    .headPhoto {
+        width: 100%;
+        position: relative; 
+    }
+    .h{
+        position: absolute;
+        text-align: center;
+        top: 50px;
+        left: 50px;
+        width: 90%;
+        font-size: 7vw;
+        font-family: 'Courier New', Courier, monospace;
+        color: beige;
+        }
+    
+}

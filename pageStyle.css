@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.paragraph {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3vw;
+  font-style: italic; }
+
+.header {
+  background: #7e0957;
+  width: 100%; }
+  .header tr {
+    width: 100%; }
+  .header th {
+    float: left;
+    width: 16.6666666667%; }
+  .header a {
+    color: #ecebeb;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace; }
+    .header a:hover {
+      background: #9b0b6b; }
+
+.container .headPhoto {
+  width: 100%;
+  position: relative; }
+.container .h {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50px;
+  width: 90%;
+  font-size: 7vw;
+  font-family: 'Courier New', Courier, monospace;
+  color: beige; }
+
+/*# sourceMappingURL=pageStyle.css.map */
