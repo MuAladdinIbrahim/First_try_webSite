@@ -39,4 +39,17 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: beige; }
 
+.boxes {
+  padding-top: 50px; }
+  .boxes .boxContainer {
+    background-color: aqua;
+    padding: 10px; }
+    .boxes .boxContainer .box {
+      width: calc(98%/3);
+      display: inline-block; }
+      .boxes .boxContainer .box img {
+        margin-left: calc(50% - 75px); }
+      .boxes .boxContainer .box h3, .boxes .boxContainer .box p {
+        text-align: center; }
+
 /*# sourceMappingURL=pageStyle.css.map */

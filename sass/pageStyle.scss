@@ -1,56 +1,82 @@
 @import "variables";
 @import "mixins";
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 .paragraph {
     font-family: 'Courier New', Courier, monospace;
-    font-size: calc(16px + 1vw);
+    font-size: $pSize;
     font-style: italic;
-} 
+}
 
-.header{
+.header {
     background: $deepPink;
     width: 100%;
-    tr{
-      width: 100%;
+
+    tr {
+        width: 100%;
     }
-    th{
-      float: left;
-      width: (100% / 6);
+
+    th {
+        float: left;
+        width: (100% / 6);
     }
-    
-    a{
-      color: $offWhite;
-      text-decoration: none;
-      padding: 16px;
-      display: block;
-      text-align: center;
-      font-size: calc(8px + 1vw);
-      font-family: 'Courier New', Courier, monospace;
-      &:hover{
-        background: lighten($deepPink, 6);
-      }
-    }  
+
+    a {
+        color: $offWhite;
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        text-align: center;
+        font-size: $aSize;
+        font-family: 'Courier New', Courier, monospace;
+
+        &:hover {
+            background: lighten($deepPink, 6);
+        }
+    }
 }
 
 .container {
     .headPhoto {
         width: 100%;
-        position: relative; 
+        position: relative;
     }
-    .h{
+
+    .h {
         position: absolute;
         text-align: center;
         top: 50px;
         left: 50px;
         width: 90%;
-        font-size: calc(16px + 4vw);
+        font-size: $hSize;
         font-family: 'Courier New', Courier, monospace;
         color: beige;
-        }
-    
+    }
 }
+
+.boxes {
+    padding-top: 50px;
+
+    .boxContainer {
+        background-color: $boxesBack;
+        padding: 10px;
+
+        .box {
+            width: calc(98%/3);
+            display: inline-block;
+
+            img {
+                margin-left: calc(50% - 75px);
+            }
+
+            h3, p {
+                text-align: center;
+            }
+        }
+    }
+}
+
