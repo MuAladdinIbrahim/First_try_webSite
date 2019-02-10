@@ -62,7 +62,8 @@ body {
 }
 
 .boxes {
-    padding-top: 50px;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
 
     .boxContainer {
         background-color: $boxesBack;
@@ -87,4 +88,13 @@ body {
             }
         }
     }
+}
+
+.footer {
+    background-color: $footerColor;
+    color: $offWhite;
+    font-size: $aSize;
+    text-align: center;
+    padding: 20px;
+   
 }
