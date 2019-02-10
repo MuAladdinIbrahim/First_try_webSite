@@ -8,7 +8,7 @@ body{
 
 .paragraph {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3vw; 
+    font-size: calc(16px + 1vw);
     font-style: italic;
 } 
 
@@ -29,7 +29,7 @@ body{
       padding: 16px;
       display: block;
       text-align: center;
-      font-size: 2vw;
+      font-size: calc(8px + 1vw);
       font-family: 'Courier New', Courier, monospace;
       &:hover{
         background: lighten($deepPink, 6);
@@ -48,7 +48,7 @@ body{
         top: 50px;
         left: 50px;
         width: 90%;
-        font-size: 7vw;
+        font-size: calc(16px + 4vw);
         font-family: 'Courier New', Courier, monospace;
         color: beige;
         }
