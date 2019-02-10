@@ -6,13 +6,17 @@ body {
     padding: 0;
 }
 
-.paragraph {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: $pSize;
-    font-style: italic;
+.middle {
+    padding: 0 10px;
+
+    .paragraph {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: $pSize;
+        font-style: italic;
+    }
 }
 
-.header {
+.nav {
     background: $deepPink;
     width: 100%;
 
@@ -21,7 +25,6 @@ body {
     }
 
     th {
-        float: left;
         width: (100% / 6);
     }
 
@@ -63,7 +66,7 @@ body {
 
     .boxContainer {
         background-color: $boxesBack;
-        padding: 10px;
+        padding: 30px;
 
         .box {
             width: calc(98%/3);
@@ -73,10 +76,15 @@ body {
                 margin-left: calc(50% - 75px);
             }
 
-            h3, p {
+            h3 {
+                font-size: calc(1.17em + .5vw);
+                text-align: center;
+            }
+
+            p {
+                font-size: calc(1em + .25vw);
                 text-align: center;
             }
         }
     }
 }
-
